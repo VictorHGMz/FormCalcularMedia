@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sistema Calcula Média</title>
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        
+    </head>
+    <body>
+        
+        <div class="container" style="margin-top: 50px;">
+            <div class="card" style="width: 20rem; background-color: aliceblue; box-shadow: 1px 1px 1px 1px gray; margin-left: 25rem;">
+                <div class="card-body">
+
+                    <h5 class="card-title" style="margin-bottom: 20px;"> Declarar notas: </h5>
+
+                    <form style="border: 1cm; border-color: black;">
+                        <div class="mb-3">
+                            <label class="form-label">Primeira Nota:</label>
+                            <input type="number" class="form-control" id="Nota1" max="10">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Segunda Nota:</label>
+                            <input type="number" class="form-control" id="Nota2" max="10">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Terceira Nota:</label>
+                            <input type="number" class="form-control" id="Nota3" max="10">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Média:</label>
+                            <input type="number" class="form-control" id="Resul" max="10" readonly>
+                        </div>
+                        <div>
+                            <button onclick="CalcularMedia();"  type="button" class="btn btn-primary">Calcular</button>
+                            <button onclick="Limpar();"  type="button" class="btn btn-primary" style="margin-left: 120px;">Limpar</button>
+                        </div>
+                        <label id="LabelResul"></label>
+                    </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+
+    <script src="js/script.js"></script>    
+
+</html>
